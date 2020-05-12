@@ -59,6 +59,7 @@ view.
   * [] - isHyper
   * [] - isEducated
   * [] - isHungry
+  * [] - getFace
 - [] - moodsSelectors.test
 
 Connect Redux with React
@@ -75,12 +76,14 @@ Timer
 - handle DRINK_COFFEE
 - eatSnack action
 - handle EAT_SNACK
-
 - takeNap action
 - handle TAKE_NAP
 - study action
 - handle STUDY
+
 - selectors
+- Connect Redux with React (Move container, etc.)
+- Timer
 
 ## Notes
 return() = Actions
