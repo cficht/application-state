@@ -55,10 +55,10 @@ view.
 
 ## selectors
 - [] - moodsSelectors
-  * [] - isTired
-  * [] - isHyper
-  * [] - isEducated
-  * [] - isHungry
+  * [X] - isTired
+  * [X] - isHyper
+  * [X] - isEducated
+  * [X] - isHungry
   * [] - getFace
 - [] - moodsSelectors.test
 
