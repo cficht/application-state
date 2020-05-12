@@ -1,4 +1,4 @@
-import { getTired, getHyper, getEducated, getHungry } from './moodsSelectors';
+import { getTired, getHyper, getEducated, getHungry, whichFace } from './moodsSelectors';
 
 describe('moodsSelectors testing', () => {
   it('returns true if coffees and naps are less than 1', () => {
@@ -95,5 +95,89 @@ describe('moodsSelectors testing', () => {
     const hungry = getHungry(state);
 
     expect(hungry).toEqual(false);
+  });
+
+  it('returns "🤬"', () => {
+    const state = {
+      coffees: 0,
+      snacks: 0,
+      naps: 0,
+      studies: 100
+    };
+    const face = whichFace(state);
+
+    expect(face).toEqual('🤬');
+  });
+
+  it('returns "🤮"', () => {
+    const state = {
+      coffees: 4,
+      snacks: 0,
+      naps: 0,
+      studies: 5
+    };
+    const face = whichFace(state);
+
+    expect(face).toEqual('🤮');
+  });
+
+  it('returns "😴"', () => {
+    const state = {
+      coffees: 0,
+      snacks: 1,
+      naps: 0,
+      studies: 0
+    };
+    const face = whichFace(state);
+
+    expect(face).toEqual('😴');
+  });
+
+  it('returns "🙀"', () => {
+    const state = {
+      coffees: 70,
+      snacks: 1,
+      naps: 0,
+      studies: 0
+    };
+    const face = whichFace(state);
+
+    expect(face).toEqual('🙀');
+  });
+
+  it('returns "🤯"', () => {
+    const state = {
+      coffees: 2,
+      snacks: 1,
+      naps: 0,
+      studies: 50
+    };
+    const face = whichFace(state);
+
+    expect(face).toEqual('🤯');
+  });
+
+  it('returns "😡"', () => {
+    const state = {
+      coffees: 2,
+      snacks: 0,
+      naps: 0,
+      studies: 1
+    };
+    const face = whichFace(state);
+
+    expect(face).toEqual('😡');
+  });
+
+  it('returns "😀"', () => {
+    const state = {
+      coffees: 2,
+      snacks: 1,
+      naps: 2,
+      studies: 0
+    };
+    const face = whichFace(state);
+
+    expect(face).toEqual('😀');
   });
 });

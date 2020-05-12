@@ -54,13 +54,13 @@ view.
 - [X] - moodsReducer.test
 
 ## selectors
-- [] - moodsSelectors
+- [X] - moodsSelectors
   * [X] - isTired
   * [X] - isHyper
   * [X] - isEducated
   * [X] - isHungry
-  * [] - getFace
-- [] - moodsSelectors.test
+  * [X] - getFace
+- [X] - moodsSelectors.test
 
 Connect Redux with React
 Timer
@@ -80,8 +80,8 @@ Timer
 - handle TAKE_NAP
 - study action
 - handle STUDY
-
 - selectors
+
 - Connect Redux with React (Move container, etc.)
 - Timer
 
