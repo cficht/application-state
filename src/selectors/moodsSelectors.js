@@ -12,3 +12,5 @@ export const whichFace = state => {
   if(getHungry(state)) return '😡';
   return '😀';
 };
+
+export const getEmotion = state => state;

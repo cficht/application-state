@@ -81,8 +81,10 @@ Timer
 - study action
 - handle STUDY
 - selectors
+* Remove the state declaration in the container
+* extract code from `Moods.js` into the appropriate files
+* use the `useSelector` and `useDispatch` hooks connect redux
 
-- Connect Redux with React (Move container, etc.)
 - Timer
 
 ## Notes
