@@ -63,6 +63,7 @@ view.
 - [X] - moodsSelectors.test
 
 Connect Redux with React
+Button
 Timer
 
 # --------------------
@@ -81,10 +82,10 @@ Timer
 - study action
 - handle STUDY
 - selectors
-* Remove the state declaration in the container
-* extract code from `Moods.js` into the appropriate files
-* use the `useSelector` and `useDispatch` hooks connect redux
-
+- Remove the state declaration in the container
+- extract code from `Moods.js` into the appropriate files
+- use the `useSelector` and `useDispatch` hooks connect redux
+- Button
 - Timer
 
 ## Notes
