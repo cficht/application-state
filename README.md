@@ -70,9 +70,9 @@ view.
 - index.js
 - make Redux folders
 - setup Reducer
-
 - drinkCoffee action
 - handle DRINK_COFFEE
+
 - eatSnack action
 - handle EAT_SNACK
 - takeNap action
