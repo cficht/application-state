@@ -39,7 +39,7 @@ view.
 
 ## actions
 - [] - moodsActions
-  * [] - drinkCoffee action
+  * [X] - drinkCoffee action
   * [] - eatSnack action
   * [] - takeNap action
   * [] - study action
@@ -47,7 +47,7 @@ view.
 
 ## reducers
 - [] - moodsReducer
-  * [] - handle DRINK_COFFEE
+  * [X] - handle DRINK_COFFEE
   * [] - handle EAT_SNACK
   * [] - handle TAKE_NAP
   * [] - handle STUDY

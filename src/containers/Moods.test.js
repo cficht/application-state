@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Moods, { isTired, isHyper, isEducated, isHungry, getFace } from './Moods';
 
-describe('Moods', () => {
+describe.skip('Moods', () => {
   describe('mood selectors', () => {
     it('knows if it is tired', () => {
       expect(isTired({ coffees: 0, naps: 0 })).toBeTruthy();
