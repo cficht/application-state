@@ -38,17 +38,17 @@ view.
 # --------------------
 
 ## actions
-- [] - moodsActions
+- [X] - moodsActions
   * [X] - drinkCoffee action
-  * [] - eatSnack action
-  * [] - takeNap action
-  * [] - study action
-- [] - Actions.test
+  * [X] - eatSnack action
+  * [X] - takeNap action
+  * [X] - study action
+- [X] - Actions.test
 
 ## reducers
 - [] - moodsReducer
   * [X] - handle DRINK_COFFEE
-  * [] - handle EAT_SNACK
+  * [X] - handle EAT_SNACK
   * [] - handle TAKE_NAP
   * [] - handle STUDY
 - [] - moodsReducer.test
@@ -61,7 +61,8 @@ view.
   * [] - isHungry
 - [] - moodsSelectors.test
 
-
+Connect Redux with React
+Timer
 
 # --------------------
 
@@ -72,9 +73,9 @@ view.
 - setup Reducer
 - drinkCoffee action
 - handle DRINK_COFFEE
-
 - eatSnack action
 - handle EAT_SNACK
+
 - takeNap action
 - handle TAKE_NAP
 - study action
