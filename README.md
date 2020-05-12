@@ -46,12 +46,12 @@ view.
 - [X] - Actions.test
 
 ## reducers
-- [] - moodsReducer
+- [X] - moodsReducer
   * [X] - handle DRINK_COFFEE
   * [X] - handle EAT_SNACK
-  * [] - handle TAKE_NAP
-  * [] - handle STUDY
-- [] - moodsReducer.test
+  * [X] - handle TAKE_NAP
+  * [X] - handle STUDY
+- [X] - moodsReducer.test
 
 ## selectors
 - [] - moodsSelectors
