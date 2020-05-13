@@ -9,6 +9,7 @@ const Moods = () => {
   const dispatch = useDispatch();
   const emotion = useSelector(getEmotion);
   const face = useSelector(whichFace);
+  console.log(emotion);
   
   return (
     <>

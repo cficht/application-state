@@ -1,7 +1,8 @@
-export const getTired = state => state.coffees < 1 && state.naps < 1;
-export const getHyper = state => state.coffees > 3;
-export const getEducated = state => state.studies > 2;
-export const getHungry = state => state.snacks < 1;
+export const getEmotion = state => state.moods;
+export const getTired = state => state.moods.coffees < 1 && state.moods.naps < 1;
+export const getHyper = state => state.moods.coffees > 3;
+export const getEducated = state => state.moods.studies > 2;
+export const getHungry = state => state.moods.snacks < 1;
 
 export const whichFace = state => {
   if(getTired(state) && getHungry(state)) return '🤬';
@@ -13,4 +14,4 @@ export const whichFace = state => {
   return '😀';
 };
 
-export const getEmotion = state => state;
+
