@@ -2,11 +2,12 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Controls from '../controls/Controls';
 import Face from '../face/Face';
+import Timer from '../Timer/Timer';
 import { drinkCoffee, eatSnack, takeNap, study, reset } from '../../actions/moodsActions';
 import { whichFace, getEmotion } from '../../selectors/moodsSelectors';
 import { startTimer, countDown, timerStartOff } from '../../actions/timerActions';
 import { isTiming, getTimerStart } from '../../selectors/timerSelectors';
-import Timer from '../Timer/Timer';
+import styles from './Moods.css';
 
 const Moods = () => {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const Moods = () => {
   const timerStart = useSelector(getTimerStart);
   let countHandler;
   
-  if(timerStart && timing) {
+  if(timerStart) {
     dispatch(timerStartOff());
     countHandler = setInterval(() => {
       dispatch(countDown(countHandler));
@@ -42,7 +43,9 @@ const Moods = () => {
       );
     } else {
       return (
-        <button onClick={() => dispatch(startTimer(10))}>Start</button>
+        <section className={styles.Moods}>
+          <button onClick={() => dispatch(startTimer(10))}>Start</button>
+        </section>
       );
     }
   };

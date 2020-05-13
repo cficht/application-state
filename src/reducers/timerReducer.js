@@ -12,9 +12,10 @@ export default function reducer(state = initialState, action) {
       state.timerStart = true;
       return state;
     case COUNT_DOWN:
-      if(state.count > 0) {
+      if(state.count > 1) {
         state.count--;
       } else {
+        state.count--;
         window.clearInterval(action.payload);
       }
       return state;
