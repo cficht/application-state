@@ -1,9 +1,14 @@
-import { isTiming } from './timerSelectors';
+import { isTiming, getTime } from './timerSelectors';
+import { getTired } from './moodsSelectors';
 
 describe('timerSelectors testing', () => {
   it('returns true if timer is above 0', () => {
-    const state = {
-      time: 10
+    const state = 
+    {
+      time: 
+      {
+        count: 10
+      }
     };
     const time = isTiming(state);
 
@@ -11,12 +16,29 @@ describe('timerSelectors testing', () => {
   });
 
   it('returns false if timer is below 1', () => {
-    const state = {
-      time: 0
+    const state = 
+    {
+      time: 
+      {
+        count: 0
+      }
     };
     const time = isTiming(state);
 
     expect(time).toEqual(false);
+  });
+
+  it('returns the current time', () => {
+    const state = 
+    {
+      time: 
+      {
+        count: 40
+      }
+    };
+    const time = getTime(state);
+
+    expect(time).toEqual(40);
   });
 
 });

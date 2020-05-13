@@ -1,13 +1,16 @@
-import { START_TIMER } from '../actions/timerActions';
+import { START_TIMER, COUNT_DOWN } from '../actions/timerActions';
 
 const initialState = {
-  time: 0
+  count: 0
 };
 
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case START_TIMER:
-      state.time = state.time + action.payload;
+      state.count = action.payload;
+      return state;
+    case COUNT_DOWN:
+      state.count--;
       return state;
     default:
       return state;
