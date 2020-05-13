@@ -1,5 +1,4 @@
-import { isTiming, getTime } from './timerSelectors';
-import { getTired } from './moodsSelectors';
+import { isTiming, getTime, getTimerStart } from './timerSelectors';
 
 describe('timerSelectors testing', () => {
   it('returns true if timer is above 0', () => {
@@ -39,6 +38,19 @@ describe('timerSelectors testing', () => {
     const time = getTime(state);
 
     expect(time).toEqual(40);
+  });
+
+  it('returns true for the timer starting', () => {
+    const state = 
+    {
+      time: 
+      {
+        timerStart: true
+      }
+    };
+    const time = getTimerStart(state);
+
+    expect(time).toEqual(true);
   });
 
 });

@@ -87,7 +87,6 @@ Timer
 - use the `useSelector` and `useDispatch` hooks connect redux
 - Button
 - Timer
-
 - Countdown
 
 ## Notes

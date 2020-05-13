@@ -1,4 +1,4 @@
-import { startTimer, START_TIMER, countDown, COUNT_DOWN } from './timerActions';
+import { startTimer, START_TIMER, countDown, COUNT_DOWN, timerStartOff, TIMER_START_OFF } from './timerActions';
 
 describe('timerActions tests', () => {
   it('creates a start timer action', () => {
@@ -15,6 +15,14 @@ describe('timerActions tests', () => {
 
     expect(action).toEqual({
       type: COUNT_DOWN
+    });
+  });
+
+  it('creates a timer start off action', () => {
+    const action = timerStartOff();
+
+    expect(action).toEqual({
+      type: TIMER_START_OFF
     });
   });
 });

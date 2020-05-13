@@ -17,3 +17,8 @@ export const STUDY = 'STUDY';
 export const study = () => ({
   type: STUDY
 });
+
+export const RESET = 'SRESETTUDY';
+export const reset = () => ({
+  type: RESET
+});

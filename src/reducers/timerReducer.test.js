@@ -1,4 +1,4 @@
-import { startTimer, countDown } from '../actions/timerActions';
+import { startTimer, countDown, timerStartOff } from '../actions/timerActions';
 import reducer from './timerReducer';
 
 describe('timerReducer testing', () => {
@@ -10,7 +10,8 @@ describe('timerReducer testing', () => {
     const newState = reducer(state, action);
     
     expect(newState).toEqual({
-      count: 60
+      count: 60,
+      timerStart: true
     });
   });
 
@@ -23,6 +24,18 @@ describe('timerReducer testing', () => {
     
     expect(newState).toEqual({
       count: 28
+    });
+  });
+
+  it('handles the TIMER_START_OFF action', () => {
+    const state = {
+      timerStart: true
+    };
+    const action = timerStartOff();
+    const newState = reducer(state, action);
+    
+    expect(newState).toEqual({
+      timerStart: false
     });
   });
 });
